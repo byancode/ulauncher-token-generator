@@ -1,0 +1,18 @@
+{
+  "required_api_version": "2.0.0",
+  "name": "Token & UUID Generator",
+  "description": "Quickly generate random tokens and UUIDs",
+  "developer_name": "oulu",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "Extension Keyword",
+      "default_value": "gen"
+    }
+  ]
+}
