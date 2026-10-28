@@ -1,7 +1,7 @@
 {
   "required_api_version": "2.0.0",
   "name": "Token & UUID Generator",
-  "description": "Quickly generate random tokens and UUIDs",
+  "description": "Generate secure tokens, passwords, UUIDs, ULIDs and hashes",
   "developer_name": "orcunulutas",
   "icon": "images/icon.png",
   "options": {
@@ -13,6 +13,36 @@
       "type": "keyword",
       "name": "Extension Keyword",
       "default_value": "gen"
+    },
+    {
+      "id": "default_length",
+      "type": "input",
+      "name": "Default token length",
+      "description": "Length used by token/hex when no length is given (1-2048)",
+      "default_value": "32"
+    },
+    {
+      "id": "pin_length",
+      "type": "input",
+      "name": "Default PIN length",
+      "description": "Digits used by pin when no length is given (1-64)",
+      "default_value": "6"
+    },
+    {
+      "id": "password_symbols",
+      "type": "select",
+      "name": "Password symbols",
+      "description": "Include symbols in generated passwords",
+      "options": ["yes", "no"],
+      "default_value": "yes"
+    },
+    {
+      "id": "hash_algorithm",
+      "type": "select",
+      "name": "Default hash algorithm",
+      "description": "Used by the hash command when no algorithm is given",
+      "options": ["sha256", "sha1", "md5", "sha512"],
+      "default_value": "sha256"
     }
   ]
 }
